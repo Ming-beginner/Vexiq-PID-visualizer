@@ -15,9 +15,10 @@ def read_input():
 
 def main():
   angle, time = read_input()
-  plt.plot(time, angle)
-  plt.ylabel('time')
-  plt.xlabel('angle')
+  plt.plot(angle, time)
+  plt.yticks([45, 90])
+  plt.xlabel('time')
+  plt.ylabel('angle')
   plt.show()
   pass
 
